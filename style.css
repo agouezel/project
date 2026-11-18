@@ -202,9 +202,15 @@ img {
     grid-area: vertical;
 }
 
+.swapped .photo-1{
+    object-position: 50% 20%;
+}
+
 .swapped .photo-2{
     object-position: 50% 20%;
 }
+
+
 
 .gallery-attraction img{
     width: 100%;
