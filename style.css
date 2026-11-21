@@ -174,6 +174,52 @@ img {
     text-decoration: underline;
 }
 
+/*-------------history----------------*/
+.timeline{
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding-left: 30px;
+    border-left: 3px solid #4763a5;
+}
+
+.timeline-item{
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 18px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -40px;
+    top: 22px;
+    width: 15px;
+    height: 15px;
+    background-color: #4763a5;
+    border-radius: 50%;
+}
+
+
+.timeline-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.timeline-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.timeline-content p {
+    line-height: 1.6;
+    text-align: justify;
+}
 
 /*-----------sightseeing--------------*/
 .gallery-attraction{
@@ -298,6 +344,8 @@ img {
     height: 450px;
     border: 0;
 }
+
+
 
 /*-----------footer----------*/
 .site-footer {
