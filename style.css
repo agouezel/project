@@ -176,13 +176,15 @@ img {
     font-size: 0.8rem;
 }
 
-.news-text summary {
+.news-text summary,
+.faq-item summary {
     cursor: pointer;
     font-weight: bold;
     color: #0b5394;
 }
 
-.news-text summary:hover {
+.news-text summary:hover,
+.faq-item summary:hover {
     text-decoration: underline;
 }
 
@@ -424,7 +426,9 @@ img {
 }
 
 .emergency-banner h3,
-.institutions h3 {
+.institutions h3,
+.contact-form-section h3,
+.faq h3 {
     margin-top: 0;
     color: #4763a5;
 }
@@ -460,6 +464,59 @@ img {
     font-style: normal; /* enlève l'italique par défaut de <address> */
 }
 
+
+.contact-form-section,
+.faq {
+    margin-top: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /*25px between each block inside the form*/
+    text-align: left;   
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /*5px only between the label and its corresponding field.*/
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    background-color: #4763a5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #364d85;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+}
+
+.faq-item p {
+    margin: 10px 0 0;
+}
 
 /*-----------footer----------*/
 .site-footer {
