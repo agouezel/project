@@ -415,6 +415,73 @@ img {
     color: white;
 }
 
+.table-areas {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: whitesmoke;
+}
+
+.table-areas th {
+    background-color: #4763a5;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.table-areas td {
+    padding: 8px;
+    border-bottom: 1px solid gray;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.accomodation-cards {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.official-tourism-website, .tourist-tax {
+    border: 1px solid #4763a5;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f7f8fc;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 3px;
+}
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d5dbea;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-card h4, .food-card p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.food-card h4 {
+    text-align: center;
+}
+
 /*----------contact----------*/
 .emergency-banner {
     background-color: #f2f2f2;
