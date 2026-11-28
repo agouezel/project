@@ -240,15 +240,22 @@ img {
 
 .santefisio-intro {
     display: grid;
-    grid-template-columns: 0.5fr 2.3fr;
+    grid-template-columns:1fr 1fr;
     gap: 25px;
-    align-items: center;
+    align-items: start;
     margin-bottom: 50px;
+}
+
+.santefisio-intro-text h3 {
+    margin-top: 0;
+}
+.santefisio h2{
+    margin-bottom: 30px;
 }
 
 .santefisio-intro img {
     width: 100%;
-    height: 500px;
+    height: 350px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -565,7 +572,7 @@ img {
     font-weight: bold;
 }
 .institutions-card address {
-    font-style: normal; /* enlève l'italique par défaut de <address> */
+    font-style: normal; /* remove the default italics from <address> */
 }
 
 
@@ -628,4 +635,83 @@ img {
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+
+
+/* ---------------responsive design------------*/
+
+
+@media (max-width: 800px) {
+    main {
+        width: 90%;
+    }
+
+    .site-header {
+        padding: 0 5%;
+    }
+
+    .site-header ul {
+        gap: 12px;
+        
+    }
+    .news-layout {
+        flex-direction: column-reverse;
+    }
+
+    .events {
+        width: 100%;
+    }
+    .santefisio-intro,
+    .santefisio-war {
+        grid-template-columns: 1fr;
+    }
+
+    .santefisio-intro img {
+        height: 300px;
+    }
+
+    /* History : passe la galerie des 12 costumes de 4 à 2 colonnes */
+    .santefisio-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 110px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .site-header {
+        height: auto;
+        padding: 10px 5%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .site-header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .news-card {
+        flex-direction: column;
+    }
+
+    .news-card img {
+        width: 100%;
+        max-width: 100%;
+    }
+  
+    .timeline-content,
+    .santefisio-gallery {
+        grid-template-columns: 1fr;
+    }
 }
