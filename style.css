@@ -482,6 +482,43 @@ img {
     text-align: center;
 }
 
+.transport-option {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    align-items: start;
+    margin: 25px;
+}
+
+.transport-option img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.transport-option details {
+    border-bottom: 1px solid #d5dbea;
+    padding: 12px 0;
+}
+
+.transport-option summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.transport-option h3 {
+    color: #4763a5;
+    margin-top: 0;
+}
+
+#transport hr {
+    border: none;
+    border-top: 1px solid #d5dbea;
+    margin: 35px 0;
+}
+
+
 /*----------contact----------*/
 .emergency-banner {
     background-color: #f2f2f2;
